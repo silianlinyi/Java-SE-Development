@@ -8,4 +8,4 @@ IDE(Integrated Development Environment),集成开发环境。
 * (2) JBuilder
 * (3) Intellij Idea
 * (4) Eclipse http://www.eclipse.org/
-
+* (5) MyEclipse http://www.myeclipseide.com/
