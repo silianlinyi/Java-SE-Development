@@ -4,7 +4,8 @@
 
 IDE(Integrated Development Environment),集成开发环境。
 
-* （1）NetBeans
-* （2）JBuilder
-* （3）Intellij Idea
+* (1) NetBeans https://netbeans.org/
+* (2) JBuilder
+* (3) Intellij Idea
+* (4) Eclipse http://www.eclipse.org/
 
