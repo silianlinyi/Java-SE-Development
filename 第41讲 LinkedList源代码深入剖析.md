@@ -30,3 +30,78 @@
     		return list.isEmpty();
     	}
     }
+
+> LinkedList.java
+
+    package java.util;
+    
+    public class LinkedList<E> 
+        extends AbstractSequentialList<E>
+        implements List<E>, Deque<E>, Cloneable, java.io.Serializable
+    {
+        // 记录元素个数
+        transient int size = 0;
+        
+        // 指向第一个节点
+        transient Node<E> first;
+    
+        // 指向最后一个节点
+        transient Node<E> last;
+        
+        /**
+         * 构造一个空的列表
+         */
+        public LinkedList() {
+        }
+        
+        public LinkedList(Collection<? extends E> c) {
+            this();
+            addAll(c);
+        }
+        
+        
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
