@@ -24,3 +24,20 @@
       	    return "hello: " + name;
         }
     }
+
+> TestPrivate.java
+
+    import java.lang.reflect.InvocationTargetException;
+    import java.lang.reflect.Method;
+    
+    public class TestPrivate {
+    	public static void main(String[] args) throws NoSuchMethodException, SecurityException, IllegalAccessException,
+    			IllegalArgumentException, InvocationTargetException {
+    		Private p = new Private();
+    		Class<?> classType = p.getClass();
+    		Method method = classType.getDeclaredMethod("sayHello", new Class[] { String.class });
+    		method.setAccessible(true); // 压制Java的访问控制检查
+    		String str = (String) method.invoke(p, new Object[] { "Jack" });
+    		System.out.println(str);
+    	}
+    }
