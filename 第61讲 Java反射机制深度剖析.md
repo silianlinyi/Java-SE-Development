@@ -16,3 +16,11 @@
 * Array类：提供了动态创建数组，以及访问数组的元素的静态方法
 
 **通过Java的反射机制访问一个类中的私有方法**
+
+> Private.java
+
+    public class Private {
+        private String sayHello(String name) {
+      	    return "hello: " + name;
+        }
+    }
