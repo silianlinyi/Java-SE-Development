@@ -41,3 +41,16 @@
     		System.out.println(str);
     	}
     }
+
+如果不加<code>method.setAccessible(true);</code>这行代码，便不能访问一个类中的私有方法。
+
+
+
+
+
+
+
+
+
+
+
