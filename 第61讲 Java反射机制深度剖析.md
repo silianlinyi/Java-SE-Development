@@ -44,7 +44,17 @@
 
 如果不加<code>method.setAccessible(true);</code>这行代码，便不能访问一个类中的私有方法。
 
+**通过Java的反射机制访问一个类中的私有变量**
 
+> Private2.java
+
+    public class Private2 {
+    	private String name = "zhangsan";
+    
+    	public String getName() {
+    		return name;
+    	}
+    }
 
 
 
